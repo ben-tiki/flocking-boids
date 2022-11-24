@@ -31,3 +31,23 @@ document.getElementById("boids-number").addEventListener("input", function () {
     }
     document.getElementById("boids-number-value").innerHTML = boidNumber;
 });
+
+document.getElementById("boids-velocity").addEventListener("input", function () {
+    velocity = parseInt(this.value);
+    document.getElementById("boids-velocity-value").innerHTML = velocity;
+});
+
+document.getElementById("boids-interaction-radius").addEventListener("input", function () {
+    interactionRadius = parseInt(this.value);
+    document.getElementById("boids-interaction-radius-value").innerHTML =interactionRadius;
+});
+
+document.getElementById("boids-noise").addEventListener("input", function () {
+    noise = parseInt(this.value);
+    document.getElementById("boids-noise-value").innerHTML = noise;
+});
+
+document.getElementById("boids-size").addEventListener("input", function () {
+    boidSize = parseInt(this.value);
+    document.getElementById("boids-size-value").innerHTML = boidSize;
+});
