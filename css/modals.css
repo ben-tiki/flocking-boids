@@ -1,0 +1,184 @@
+/* ----------- PAUSE INFO -------------- */
+#pause-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(255, 255, 255);
+  line-height: 90%;
+  font-size: 1.5em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  visibility: hidden;
+}
+
+#pause-info-text {
+  animation: blinker 2s linear infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---------- KEY BINDINGS ------------- */
+#key-bindings {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255);
+  text-align: center;
+  visibility: hidden;
+}
+
+#key-bindings-title {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#key-bindings-text {
+  line-height: 160%;
+}
+
+.key-binding {
+  text-shadow:
+    0 0 1px #FFF,
+    0 0 5px #FFF,
+    0 0 10px #fff,
+    0 0 20px #FFF,
+    0 0 70px #FFF;
+}
+
+#control-keybind{
+  cursor: pointer;
+}
+
+/* ------------- MODALS ---------------- */
+.modal-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 15rem;
+  width: 15rem;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.modal-content {
+  color: #fff;
+  line-height: 70%;
+}
+
+/* ---------- OPTIONS MODAL ------------ */
+.modal-container {
+  user-select: none;
+  --webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  cursor: default;
+}
+
+.main-modal-content {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: left;
+  font-size: 0.9em;
+}
+
+.main-modal-wrapper {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+input[type="range" i] {
+  opacity: 0.7;
+  accent-color: #fff;
+  width: 12.5em;
+  cursor: pointer;
+}
+
+button {
+  width: 6em;
+  height: 2em;
+  font-family: inherit;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+select {
+  display: flex;
+  gap: 0.5em;
+  width: 6.2em;
+  height: 2em;
+  text-align-last: center;
+  font-family: inherit;
+  border-radius: 0.25em;
+  font-size: small;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+#dropwdown-wrapper {
+  display: flex;
+  gap: 0.25em;
+}
+
+#main-menu-buttons {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+#horizonal-control-line{
+  width: 70%;
+}
+
+#main-modal-title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+/* ----------- MODAL POSITIONS -------------- */
+#status-modal {
+  top: 7.5em;
+  right: -10em;
+  position: absolute;
+  visibility: hidden;
+  
+}
+
+#focus-modal {
+  bottom: -10.5em;
+  right: -10em;
+  position: absolute;
+  visibility: hidden;
+}
+
+#options-modal {
+  top: 7.5em;
+  left: 9em;
+  position: absolute;
+  visibility: hidden;
+}

@@ -1,0 +1,45 @@
+/* --------- TOP BUTTON MENU ----------- */
+#top-menu {
+  display: flex;
+  gap: 15px;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  animation-delay: 5s;
+  top: 0.25%;
+  left: 49.5%;
+  position: absolute;
+  transform: translate(-49.5%, -0.25%);
+}
+
+.top-menu-items {
+  font-size: 1.25rem;
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.top-menu-items img {
+  width: 50%;
+  margin-top: 15%;
+  margin-left: 25%;
+}
+
+.top-menu-items:hover {
+  transform: scale(1.1);
+}
