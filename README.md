@@ -28,4 +28,4 @@ Some of the unique features of my implementation are:
  - Boids can be either circles or triangles.
 
  ## Cool Examples
-Uploading boids-viscek.mp4…
+https://user-images.githubusercontent.com/101474762/203870601-ed02cd3d-e87e-4504-8b7e-bfaf9768e1c9.mp4
